@@ -74,6 +74,20 @@ public class SoccerDatabase implements SoccerDB {
     }
 
     /**
+     * increment a player's fouls
+     *
+     * @see SoccerDB#bumpFouls(String, String)
+     */
+    @Override
+    public boolean bumpFouls(String firstName, String lastName) {
+        SoccerPlayer player = database.get(getKey(firstName, lastName));
+        if (player == null)
+            return false;
+        player.bumpFouls();
+        return true;
+    }
+
+    /**
      * increment a player's yellow cards
      *
      * @see SoccerDB#bumpYellowCards(String, String)

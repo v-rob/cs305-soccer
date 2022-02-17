@@ -24,4 +24,6 @@
     <string name="remove_player_button">Remove player</string>
     <string name="clear_database_button">Clear database</string>
     <string name="all_teams">### ALL ###</string>
+    <string name="fouls_label">Fouls:</string>
+    <string name="incr_foul_button">+Foul</string>
 </resources>
